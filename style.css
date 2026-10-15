@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap');
+
+:root {
+    --linen: #F5F1EA;
+    --khaki: #D7C9B8;
+    --camel: #B2967D;
+    --cocoa: #7D5A44;
+    --espresso: #4A342A;
+    --white: #FFFFFF;
+    --text: #665449;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    color: var(--espresso);
+    background: var(--linen);
+    line-height: 1.7;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+section {
+    scroll-margin-top: 70px;
+}
+
+.navbar {
+    padding: 20px 8%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background: var(--linen);
+    border-bottom: 1px solid #D7C9B855;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 28px;
+}
+
+.nav-links a {
+    color: var(--espresso);
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.25s ease;
+}
+
+.nav-links a:hover {
+    color: var(--camel);
+}
+
+.hero {
+    min-height: 610px;
+    padding: 75px 10%;
+    background: var(--linen);
+    display: grid;
+    grid-template-columns: 1fr 0.85fr;
+    align-items: center;
+    gap: 55px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-text {
+    position: relative;
+    z-index: 2;
+}
+
+.eyebrow {
+    color: var(--cocoa);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+.hero h1 {
+    color: var(--espresso);
+    font-size: clamp(42px, 5.7vw, 76px);
+    line-height: 1.05;
+    letter-spacing: -2px;
+    font-weight: 800;
+}
+
+.hero h1 span {
+    color: var(--camel);
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.subtitle {
+    max-width: 360px;
+    margin-top: 23px;
+    color: var(--text);
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 13px 22px;
+    background: var(--espresso);
+    color: var(--linen);
+    border: 1px solid var(--espresso);
+    border-radius: 3px;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+
+.button:hover {
+    background: var(--cocoa);
+    border-color: var(--cocoa);
+    transform: translateY(-2px);
+}
+
+.hero-note {
+    margin-top: 28px;
+    color: var(--cocoa);
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 16px;
+}
+
+.hero-photo {
+    width: 100%;
+    max-width: 375px;
+    justify-self: center;
+    position: relative;
+    padding: 13px 13px 15px;
+    background: var(--white);
+    border: 1px solid var(--khaki);
+    box-shadow: 0 18px 40px #4A342A18;
+    transform: rotate(2deg);
+    z-index: 1;
+}
+
+.photo-label {
+    display: block;
+    padding: 4px 0 12px;
+    color: var(--espresso);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.hero-photo img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center 35%;
+    border: 1px solid var(--khaki);
+}
+
+.photo-name {
+    padding-top: 12px;
+    color: var(--espresso);
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;
+    font-style: italic;
+    text-align: center;
+    overflow-wrap: anywhere;
+}
+
+.sticker {
+    position: absolute;
+    right: -24px;
+    bottom: 85px;
+    padding: 15px 18px;
+    background: var(--espresso);
+    color: var(--linen);
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;
+    line-height: 1.2;
+    text-align: center;
+    transform: rotate(8deg);
+    box-shadow: 0 6px 15px #4A342A25;
+}
+
+.decoration {
+    position: absolute;
+    color: var(--camel);
+    font-size: 60px;
+    line-height: 1;
+    user-select: none;
+}
+
+.decoration-one {
+    top: 28px;
+    right: 43%;
+}
+
+.decoration-two {
+    bottom: 28px;
+    left: 5%;
+}
+
+.section {
+    padding: 85px 10%;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-heading .eyebrow {
+    margin-bottom: 10px;
+}
+
+.section h2 {
+    color: var(--espresso);
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(30px, 4vw, 46px);
+    font-weight: 600;
+    line-height: 1.25;
+}
+
+.section-description {
+    max-width: 500px;
+    margin: 14px auto 0;
+    color: var(--text);
+    font-size: 13px;
+    line-height: 1.9;
+}
+
+.about {
+    background: var(--linen);
+    border-top: 1px solid #D7C9B855;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 0.85fr 1fr;
+    align-items: center;
+    gap: 50px;
+}
+
+.about-photo {
+    width: 100%;
+    max-width: 400px;
+    justify-self: center;
+    padding: 12px 12px 22px;
+    background: var(--white);
+    border: 1px solid var(--khaki);
+    box-shadow: 0 12px 30px #4A342A15;
+    transform: rotate(-2deg);
+}
+
+.about-photo img {
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.photo-caption {
+    display: block;
+    margin-top: 16px;
+    color: var(--espresso);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    text-align: center;
+}
+
+.profile {
+    display: grid;
+    gap: 15px;
+}
+
+.info-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    padding: 23px;
+    background: var(--white);
+    border: 1px solid #D7C9B866;
+    border-left: 4px solid var(--camel);
+    box-shadow: 0 5px 15px #4A342A0A;
+    transition: transform 0.25s ease;
+}
+
+.info-card:hover {
+    transform: translateX(4px);
+}
+
+.number {
+    flex-shrink: 0;
+    color: var(--cocoa);
+    font-family: 'Playfair Display', serif;
+    font-size: 23px;
+    line-height: 1.2;
+}
+
+.info-card h3 {
+    margin-bottom: 6px;
+    color: var(--espresso);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.info-card p {
+    color: var(--text);
+    font-size: 13px;
+    line-height: 1.8;
+    overflow-wrap: anywhere;
+}
+
+.instagram-link {
+    color: var(--cocoa);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.instagram-link:hover {
+    color: var(--camel);
+    text-decoration: underline;
+}
+
+/* FOOTER */
+
+footer {
+    padding: 22px 15px;
+    background: var(--espresso);
+    color: var(--linen);
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 13px;
+}
+
+@media (max-width: 900px) {
+    .hero {
+        padding: 65px 7%;
+        gap: 35px;
+    }
+
+    .hero h1 {
+        font-size: clamp(40px, 6vw, 60px);
+    }
+
+    .hero-photo img {
+        height: 350px;
+    }
+
+    .section {
+        padding: 70px 7%;
+    }
+
+    .about-grid {
+        gap: 35px;
+    }
+
+    .about-photo img {
+        height: 380px;
+    }
+}
+
+@media (max-width: 650px) {
+    .navbar {
+        justify-content: center;
+        padding: 18px 5%;
+    }
+
+    .nav-links {
+        justify-content: center;
+        gap: 18px;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        padding: 55px 8% 65px;
+        gap: 45px;
+    }
+
+    .hero h1 {
+        font-size: clamp(43px, 12vw, 60px);
+    }
+
+    .hero-photo {
+        width: 88%;
+        max-width: 330px;
+    }
+
+    .hero-photo img {
+        height: 360px;
+    }
+
+    .sticker {
+        right: -17px;
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .decoration-one {
+        top: 20px;
+        right: 8%;
+        font-size: 45px;
+    }
+
+    .decoration-two {
+        bottom: 20px;
+        left: 4%;
+        font-size: 45px;
+    }
+
+    .section {
+        padding: 60px 7%;
+    }
+
+    .section-heading {
+        margin-bottom: 32px;
+    }
+
+    .section h2 {
+        font-size: 34px;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .about-photo {
+        width: 90%;
+        max-width: 350px;
+    }
+
+    .about-photo img {
+        height: 390px;
+    }
+
+    .profile {
+        gap: 12px;
+    }
+
+    .info-card {
+        padding: 20px;
+        gap: 14px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition: none !important;
+    }
+}
+
+.hobby-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    max-width: 850px;
+    margin: 0 auto;
+}
